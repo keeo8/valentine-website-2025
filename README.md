@@ -1,8 +1,8 @@
 Full instructions can be found from parent repo
 
-## Credits
-Created with love for Valentine's Day 2025.
-Feel free to use and modify for your special someone!
+My own spin on a special valentine's day website 
+
+## Credits 
 Louis Fontaine 
 
 ## 📜 License
