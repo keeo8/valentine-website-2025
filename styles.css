@@ -36,28 +36,44 @@ body {
     overflow: visible !important;
 }
 
-.floating-elements {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
+.floating-element {
+    position: absolute;
+    width: 80px;  /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    max-height: 100%; /* Ensures the image doesn't exceed its container */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border-radius: 50%; /* Optional: Makes the images circular */
+    animation-fill-mode: backwards;
+    animation: floatUp var(--float-duration) linear infinite;
+    opacity: 0; 
+    /*border: 2px solid red; /* Temporary border for debugging */
 }
-
 .heart, .bear {
     position: absolute;
     font-size: 2rem;
-    animation: float var(--float-duration) linear infinite;
+    animation-fill-mode: backwards;
+    animation: floatUp var(--float-duration) linear infinite;
+    opacity: 0;
 }
 
-@keyframes float {
+
+@keyframes floatUp {
     0% {
-        transform: translateY(100vh) translateX(0);
+      transform: translateY(100vh) translateX(0); /* Start below the screen */
+      opacity: 0; /* Start fully transparent */
+    }
+    10% {
+      opacity: 1; /* Fade in quickly */
+    }
+    90% {
+      opacity: 1; /* Stay visible most of the time */
     }
     100% {
-        transform: translateY(-100px) translateX(var(--float-distance));
+      transform: translateY(-100vh) translateX(var(--float-distance));
+      opacity: 0; /* Fade out at the top */
     }
-}
+  }
 
 .cute-btn {
     background: var(--button-color);

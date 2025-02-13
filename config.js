@@ -3,19 +3,22 @@
 // ============================================
 
 const CONFIG = {
-    // Your Valentine's name that will appear in the title
-    // Example: "Jade", "Sarah", "Mike"
-    valentineName: "Jade",
 
-    // The title that appears in the browser tab
-    // You can use emojis! 💝 💖 💗 💓 💞 💕
-    pageTitle: "Will You Be My Valentine? 💝",
+    valentineName: "Luna",
+    pageTitle: "TOP SECRET QUESTION",
 
     // Floating emojis that appear in the background
     // Find more emojis at: https://emojipedia.org
     floatingEmojis: {
-        hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis
-        bears: ['🧸', '🐻']                       // Cute bear emojis
+        hearts: ['./media/luna-car-1.png', './media/luna1.png', './media/selfie.PNG', 'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408323/image_z5uogf.webp', 
+            'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408297/image_ssanmr.webp', 'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408295/image_ajqwsg.webp', 
+            'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408293/image_jyxtn1.webp', 'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408290/image_gzwcyi.webp',
+            'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408285/image_ogtnmn.webp', 'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408278/image_lzcac1.webp',
+            'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408274/image_zwvy9c.webp', 'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408260/image_rgtmkh.webp',
+            'https://res.cloudinary.com/dfn83id6f/image/upload/v1739408240/m1_so2gpw.jpg'
+        ],
+        hearts2: [ '💖', '💝', '💗', '💓'],  // Heart emojis
+        bears: ['🫘', '🐻']                       // Cute bear emojis
     },
 
     // Questions and answers
@@ -49,18 +52,18 @@ const CONFIG = {
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        title: "WOOOOOOO I'm THE LUCKIEST PERSON IN  THE WORLDDDDDD 🎉💝💖💝💓",
+        message: "BIG HUG AND KISS TIME",
+        emojis: "🤗💝💋"  // These will bounce around
     },
 
     // Color scheme for the website
     // Use https://colorhunt.co or https://coolors.co to find beautiful color combinations
     colors: {
-        backgroundStart: "#ffafbd",      // Gradient start (try pastel colors for a soft look)
-        backgroundEnd: "#ffc3a0",        // Gradient end (should complement backgroundStart)
-        buttonBackground: "#ff6b6b",     // Button color (should stand out against the background)
-        buttonHover: "#ff8787",          // Button hover color (slightly lighter than buttonBackground)
+        backgroundStart: "#7692ff",      // Gradient start (try pastel colors for a soft look)
+        backgroundEnd: "#440381",        // Gradient end (should complement backgroundStart)
+        buttonBackground: "#EC9192",     // Button color (should stand out against the background)
+        buttonHover: "#dfbe99",          // Button hover color (slightly lighter than buttonBackground)
         textColor: "#ff4757"             // Text color (make sure it's readable!)
     },
 
@@ -78,7 +81,7 @@ const CONFIG = {
     music: {
         enabled: true,                     // Music feature is enabled
         autoplay: true,                    // Try to autoplay (note: some browsers may block this)
-        musicUrl: "https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3", // Music streaming URL
+        musicUrl: "https://res.cloudinary.com/dfn83id6f/video/upload/%C3%81lvaro_D%C3%ADaz_-_Reina_Pepiada_Lyric_Video_-_YoAlvaroDiazVEVO_fou4we.mp3", // Music streaming URL
         startText: "🎵 Play Music",        // Button text to start music
         stopText: "🔇 Stop Music",         // Button text to stop music
         volume: 0.5                        // Volume level (0.0 to 1.0)

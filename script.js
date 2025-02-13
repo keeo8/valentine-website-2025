@@ -8,7 +8,7 @@ function validateConfig() {
     // Check required fields
     if (!config.valentineName) {
         warnings.push("Valentine's name is not set! Using default.");
-        config.valentineName = "My Love";
+        config.valentineName = "good morning";
     }
 
     // Validate colors
@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     validateConfig();
 
     // Set texts from config
-    document.getElementById('valentineTitle').textContent = `${config.valentineName}, my love...`;
+    document.getElementById('valentineTitle').textContent = `${config.valentineName}, just one simple question...`;
     
     // Set first question texts
     document.getElementById('question1Text').textContent = config.questions.first.text;
@@ -90,11 +90,11 @@ function createFloatingElements() {
     
     // Create hearts
     config.floatingEmojis.hearts.forEach(heart => {
-        const div = document.createElement('div');
-        div.className = 'heart';
-        div.innerHTML = heart;
-        setRandomPosition(div);
-        container.appendChild(div);
+        const img = document.createElement('img');
+        img.className = 'floating-element';
+        img.src = heart;
+        setRandomPosition(img);
+        container.appendChild(img);
     });
 
     // Create bears
@@ -192,7 +192,7 @@ function celebrate() {
 function createHeartExplosion() {
     for (let i = 0; i < 50; i++) {
         const heart = document.createElement('div');
-        const randomHeart = config.floatingEmojis.hearts[Math.floor(Math.random() * config.floatingEmojis.hearts.length)];
+        const randomHeart = config.floatingEmojis.hearts2[Math.floor(Math.random() * config.floatingEmojis.hearts2.length)];
         heart.innerHTML = randomHeart;
         heart.className = 'heart';
         document.querySelector('.floating-elements').appendChild(heart);
